@@ -1,0 +1,7 @@
+class LlamasController < ApplicationController
+
+  
+
+
+
+end
