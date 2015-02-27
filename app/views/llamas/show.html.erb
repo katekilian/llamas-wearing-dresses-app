@@ -1,0 +1,20 @@
+<h1><%= @llama.name %>'s Fashion Profile</h1>
+
+Name: <%= @llama.name %>
+<br>
+Coloring: <%= @llama.color %>
+<br>
+<h2>About <%= @llama.name %>'s dresses:</h2>
+<% @llama.dresses.each do |dress| %>
+  Color: <%= dress.color %>
+  <br>
+  Style: <%= dress.style %>
+  <br>
+  Material: <%= dress.material %>
+  <br>
+  Price: <%= dress.price %>
+  <br>
+  <%= link_to "Show Dress Record" %>
+  <br>
+  <br>
+<% end %>

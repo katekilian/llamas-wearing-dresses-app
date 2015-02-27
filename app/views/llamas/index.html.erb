@@ -1,1 +1,13 @@
 <h1>The Llama Fashion Lineup</h1>
+
+<%= link_to "Tell us about a new trendy llama!", new_llama_path %>
+<hr>
+<br>
+<br>
+<% @llamas.each do |llama| %>
+  <%= llama.name %>
+  <br>
+  <%= link_to "View #{llama.name}'s characteristics and wardrobe", llama_path(llama) %>
+  <br>
+  <hr>
+<% end %>
