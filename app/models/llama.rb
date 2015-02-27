@@ -1,5 +1,5 @@
-class Dress < ActiveRecord::Base
+class Llama < ActiveRecord::Base
 
-
+  validates :name, :color, presence: true
 
 end
