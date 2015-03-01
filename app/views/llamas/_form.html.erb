@@ -1,0 +1,11 @@
+<%= render partial: "shared/errors", locals: { object: @llama } %>
+
+<%= form_for @llama do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+  <br>
+  <%= f.submit name_of_button %>
+<% end %>
