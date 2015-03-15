@@ -14,7 +14,7 @@ Coloring: <%= @llama.color %>
   <br>
   Price: <%= dress.price %>
   <br>
-  <%= link_to "Show Dress Record" %>
+  <%= link_to "Show Dress Record", llama_dress_path(@llama, dress) %>
   <br>
   <br>
 <% end %>

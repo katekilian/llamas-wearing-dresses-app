@@ -22,7 +22,6 @@ class LlamasController < ApplicationController
     end
   end
   
-
   private
 
   def llama_params
